@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+html, body {position:relative; height:100%; margin:0; padding:0; font-family:'NotoSans', sans-serif; color:#fff; font-size:16px; font-weight:400; line-height:1.2;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure {margin:0; padding:0; word-break:keep-all;}
+input,textarea,select,td,th,button {font-family:'NotoSans', sans-serif; color:#fff; font-size:16px; font-weight:400; line-height:1.2;}
+table {width:100%; border-spacing:0; border-collapse:collapse;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal; font-weight:normal;}
+ol,ul ,li {list-style:none;}
+abbr,acronym {border:0;}
+abbr[title] {cursor:help; text-decoration:none;}
+hr,legend {position:absolute; top:0; left:-9999px; visibility:hidden; overflow:hidden;}
+caption {overflow:hidden; width:1px; height:1px; margin-top:-1px; line-height:0; text-indent:-9999px;}
+img, fieldset {border:0 none;}
+img {vertical-align:top;}
+label {cursor:pointer; vertical-align:middle;}
+strong {font-weight:700;}
+a,
+a:link, 
+a:visited {color:inherit; text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+header, footer, section, article {display:block;}
+button {padding:0; border:none; cursor:pointer; background:0 none;}
+
+/* html5 */
+article, aside, details, figcaption, figure, footer, header, main, hgroup, nav, section, summary {display:block; margin:0; padding:0; box-sizing:border-box;}
