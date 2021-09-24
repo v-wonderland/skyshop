@@ -224,7 +224,7 @@
 /* //funding */
 
 /* message */
-.message{position:relative; width: 100%; height: 430px; background: url('/images/message_bg.png');}
+.message{position:relative; width: 100%; height: 430px; background: url('../images/message_bg.png');}
 .message .heart{position: absolute; top: 70px; right: 185px; z-index: 5;}
 .message dl{display: block; width: 100%; padding: 100px 0 110px; text-align: center;}
 .message dl dt{margin-bottom: 28px;}
@@ -237,3 +237,7 @@
 
 .message .cont .send{position: absolute; top: 60px; right: 140px; z-index: 5;}
 /* //message */
+
+
+.ui_inview {opacity:0; -webkit-transform:translateY(80px); transform:translateY(80px); -webkit-transition:all .8s; transition:all .8s;}
+.ui_inview.in {opacity:1; -webkit-transform:translateY(0); transform:translateY(0);}
