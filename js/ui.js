@@ -28,6 +28,44 @@ $(function(){
     ui.scrollDowned();
     ui.inview();
 
+	var detail1 = $('.detail .rside .cont.n01 .txt');
+	var detail2 = $('.detail .rside .cont.n02 .txt');
+
+	$('.btn_open_01').click(function(){
+		$(detail1).addClass('open');
+		$(detail1).removeClass('close');
+		if($(detail1).hasClass('open')){
+			$('.btn_open_01').addClass('hide');
+			$('.btn_close_01').removeClass('hide');
+		}
+	});
+	$('.btn_close_01').click(function(){
+		$(detail1).removeClass('open');
+		$(detail1).addClass('close');
+		if($(detail1).hasClass('close')){
+			$('.btn_close_01').addClass('hide');
+			$('.btn_open_01').removeClass('hide');
+		}
+	});
+
+	$('.btn_open_02').click(function(){
+		$(detail2).addClass('open');
+		$(detail2).removeClass('close');
+		if($(detail2).hasClass('open')){
+			$('.btn_open_02').addClass('hide');
+			$('.btn_close_02').removeClass('hide');
+		}
+	});
+	$('.btn_close_02').click(function(){
+		$(detail2).removeClass('open');
+		$(detail2).addClass('close');
+		if($(detail2).hasClass('close')){
+			$('.btn_close_02').addClass('hide');
+			$('.btn_open_02').removeClass('hide');
+		}
+		
+	});
+
 	/*fixed menu */
 	// var html = document.querySelector('html');
 	// var fixedMenu = document.getElementsByClassName('fixed-area');

@@ -266,7 +266,7 @@ window.setting = (typeof window.setting !== 'undefined') ? window.setting : {};
 		
 		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
 			, scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft
-			, topOffset = -50
+			, topOffset = -200
 			, leftOffset = 0;
 
 		var wHeight = window.innerHeight || document.documentElement.clientHeight
