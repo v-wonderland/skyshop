@@ -23,8 +23,22 @@ $(function(){
 			}
 		}
 	}
+	var dealTabAction = function() {
+		if($('#deal .cont_02 .multi_tab_area').hasClass('active')){
+			for (i = 0; i < $('#deal .cont_02  .multi_tab > li').length; i++) {
+				$('#deal .cont_02  .multi_tab > li').eq(i).find('> button').click(function(){
+					$(this).parent().addClass('on').siblings().removeClass('on').children("button").removeAttr("title");
+					$(this).attr('title','선택 됨');
+					$(this).closest($('#deal .cont_02  .multi_cont').eq($('#deal .cont_02  .multi_tab li.on').index()).addClass('on').siblings().removeClass('on'));
+
+                    ui.inview();
+				});
+			}
+		}
+	}
 
 	tabAction();
+	dealTabAction();
     ui.scrollDowned();
     ui.inview();
 

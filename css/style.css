@@ -138,6 +138,12 @@
 .timedeal .cont_02{width: 100%; margin-top: 220px; padding: 0 40px 175px; position: relative; border-bottom: 2px solid #000;}
 .timedeal .cont_02 .product{width: 100%; padding: 0 0 0 220px;}
 .timedeal .cont_02 .product:after{content: ''; display: block; visibility: hidden; clear: both;}
+.timedeal .cont_02 .product.multi_cont{display: none;}
+.timedeal .cont_02 .product.multi_cont.on{display: block;}
+.timedeal .cont_02 .product.multi_cont:nth-child(2),
+.timedeal .cont_02 .product.multi_cont:nth-child(3){padding: 0 0 0 163px;}
+.timedeal .cont_02 .product.multi_cont:nth-child(2) .visual,
+.timedeal .cont_02 .product.multi_cont:nth-child(3) .visual{margin-right: 0;}
 .timedeal .cont_02 .product .visual,
 .timedeal .cont_02 .product .desc{float: left;}
 .timedeal .cont_02 .product .visual{margin-right: 150px;}
@@ -182,6 +188,12 @@
 .best .multi_cont ul{width: 100%;}
 .best .multi_cont ul:after{content: ''; display: block; visibility: hidden; clear: both;}
 .best .multi_cont ul li{float: left; display: block; margin-left: 20px;}
+.best .multi_cont ul li.ui_inview{opacity:0; -webkit-transform:translateY(100px); transform:translateY(100px); -webkit-transition:all 1.4s; transition:all 1.4s;}
+.best .multi_cont ul li.ui_inview.in{opacity: 1; -webkit-transform:translateY(0); transform:translateY(0);}
+.best .multi_cont ul li:nth-child(2).in{transition-delay: 0.2s;}
+.best .multi_cont ul li:nth-child(3).in{transition-delay: 0.4s;}
+.best .multi_cont ul li:nth-child(4).in{transition-delay: 0.6s;}
+.best .multi_cont ul li:nth-child(5).in{transition-delay: 0.8s;}
 .best .multi_cont ul li.cont_03 .desc{position: relative; display: block; margin-top: 30px; padding-bottom: 130px; border-bottom: 2px solid #dcdcdc;}
 .best .multi_cont ul li.cont_03 .desc:after{
     content:'View more'; display: block;
@@ -253,5 +265,5 @@
 /* //message */
 
 
-.ui_inview {opacity:0; -webkit-transform:translateY(80px); transform:translateY(80px); -webkit-transition:all .8s; transition:all .8s;}
+.ui_inview {opacity:0; -webkit-transform:translateY(80px); transform:translateY(80px); -webkit-transition:all 1.2s; transition:all 1.2s;}
 .ui_inview.in {opacity:1; -webkit-transform:translateY(0); transform:translateY(0);}
